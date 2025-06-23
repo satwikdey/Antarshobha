@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Antarshobha - Interior Decoration Studio. Transform your spaces with contemporary aesthetics and timeless elegance. Inner Beauty through design.">
+    <meta name="keywords" content="interior design, decoration, residential design, commercial design, home decor, interior decorator">
+    <title>Antarshobha - Interior Decoration Studio | Inner Beauty Through Design</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- EmailJS Configuration and Contact Form Handling -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/logo/logo.svg" alt="Antarshobha Interior Design Studio" class="logo-img">
+                <h2>Antarshobha</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#blog" class="nav-link">Insights</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Discover Your Inner Beauty</h1>
+                <p class="hero-subtitle">Contemporary aesthetics meet timeless elegance in spaces that transform not just your environment, but your soul.</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">View Our Work</a>
+                    <a href="#contact" class="btn btn-secondary">Start Your Journey</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Antarshobha</h2>
+                <p class="section-subtitle">Where Inner Beauty Meets Design Excellence</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Philosophy</h3>
+                    <p>Antarshobha, meaning "Inner Beauty," represents our core belief that exceptional design goes beyond mere aesthetics. We create spaces that resonate with your soul, harmonizing contemporary innovation with timeless elegance.</p>
+                    
+                    <h3>Our Approach</h3>
+                    <p>Every project begins with understanding your unique story. We blend modern sophistication with personal touches, ensuring each space reflects not just current trends, but your individual essence and lifestyle needs.</p>
+                    
+                    <div class="values">
+                        <div class="value-item">
+                            <i class="fas fa-heart"></i>
+                            <h4>Passion</h4>
+                            <p>Driven by love for transformative design</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-gem"></i>
+                            <h4>Quality</h4>
+                            <p>Uncompromising attention to detail</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-users"></i>
+                            <h4>Collaboration</h4>
+                            <p>Your vision, our expertise, perfect harmony</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/team/founder.jpg" alt="Antarshobha Founder" class="founder-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Portfolio</h2>
+                <p class="section-subtitle">Spaces That Tell Stories</p>
+            </div>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="custom">Custom Spaces</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="residential">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-home"></i>
+                            <p>Modern Living Room</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>Elegant Residential Suite</h4>
+                            <p>Contemporary comfort meets timeless style</p>
+                            <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="commercial">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-building"></i>
+                            <p>Office Space</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>Corporate Headquarters</h4>
+                            <p>Productivity meets sophisticated design</p>
+                            <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="custom">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-palette"></i>
+                            <p>Custom Design</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>Bespoke Art Studio</h4>
+                            <p>Creativity unleashed in custom space</p>
+                            <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="residential">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-bed"></i>
+                            <p>Master Bedroom</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>Serene Master Suite</h4>
+                            <p>Rest and relaxation redefined</p>
+                            <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="commercial">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-utensils"></i>
+                            <p>Restaurant Interior</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>Fine Dining Restaurant</h4>
+                            <p>Ambiance that enhances every meal</p>
+                            <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="custom">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-book"></i>
+                            <p>Library Design</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>Personal Library</h4>
+                            <p>Knowledge sanctuary with modern flair</p>
+                            <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive Design Solutions</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Residential Design</h3>
+                    <p>Transform your home into a sanctuary that reflects your personality and lifestyle. From concept to completion, we handle every detail.</p>
+                    <ul>
+                        <li>Space Planning</li>
+                        <li>Color Consultation</li>
+                        <li>Furniture Selection</li>
+                        <li>Lighting Design</li>
+                    </ul>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Commercial Spaces</h3>
+                    <p>Create inspiring work environments that boost productivity and reflect your brand's values and culture.</p>
+                    <ul>
+                        <li>Office Design</li>
+                        <li>Retail Spaces</li>
+                        <li>Hospitality Design</li>
+                        <li>Brand Integration</li>
+                    </ul>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Bespoke Solutions</h3>
+                    <p>Unique spaces require unique solutions. Our custom design services cater to your specific needs and dreams.</p>
+                    <ul>
+                        <li>Custom Furniture</li>
+                        <li>Artisan Collaborations</li>
+                        <li>Specialty Rooms</li>
+                        <li>Luxury Finishes</li>
+                    </ul>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-compass"></i>
+                    </div>
+                    <h3>Design Consultation</h3>
+                    <p>Expert guidance for your design journey. Get professional insights and recommendations tailored to your project.</p>
+                    <ul>
+                        <li>Initial Assessment</li>
+                        <li>Design Strategy</li>
+                        <li>Budget Planning</li>
+                        <li>Timeline Creation</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="process-section">
+                <h3>Our Design Process</h3>
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">01</div>
+                        <h4>Discovery</h4>
+                        <p>Understanding your vision, needs, and lifestyle</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">02</div>
+                        <h4>Concept</h4>
+                        <p>Developing initial ideas and design direction</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">03</div>
+                        <h4>Design</h4>
+                        <p>Creating detailed plans and 3D visualizations</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">04</div>
+                        <h4>Implementation</h4>
+                        <p>Bringing your vision to life with precision</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Stories of Transformation</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"Antarshobha transformed our house into a home that truly reflects who we are. Every corner tells our story with such elegance and warmth."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="author-info">
+                            <!-- <h4>Sarah & Michael Chen</h4> -->
+                            <!-- <p>Residential Client</p> -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"The team's attention to detail and understanding of our brand vision resulted in an office space that inspires creativity and productivity daily."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="author-info">
+                            <!-- <h4>David Rodriguez</h4> -->
+                            <!-- <p>CEO, Creative Agency</p> -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"Working with Antarshobha was like having a design fairy godmother. They made our impossible dream space a beautiful reality."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="author-info">
+                            <!-- <h4>Emily Thompson</h4> -->
+                            <!-- <p>Custom Project Client</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Design Insights</h2>
+                <p class="section-subtitle">Inspiration & Expertise</p>
+            </div>
+            
+            <div class="blog-grid">
+                <article class="blog-item">
+                    <div class="blog-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-lightbulb"></i>
+                            <p>Design Trends 2024</p>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">March 15, 2024</span>
+                            <span class="blog-category">Trends</span>
+                        </div>
+                        <h3>Interior Design Trends That Will Define 2024</h3>
+                        <p>Discover the emerging trends that are shaping modern interior design, from sustainable materials to biophilic elements.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="blog-item">
+                    <div class="blog-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-leaf"></i>
+                            <p>Sustainable Design</p>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">March 8, 2024</span>
+                            <span class="blog-category">Sustainability</span>
+                        </div>
+                        <h3>Creating Eco-Friendly Interiors Without Compromise</h3>
+                        <p>Learn how to incorporate sustainable practices into your interior design while maintaining luxury and style.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="blog-item">
+                    <div class="blog-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-palette"></i>
+                            <p>Color Psychology</p>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">February 28, 2024</span>
+                            <span class="blog-category">Design Tips</span>
+                        </div>
+                        <h3>The Psychology of Color in Interior Design</h3>
+                        <p>Understand how different colors affect mood and energy, and learn to choose the perfect palette for your space.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Create Something Beautiful</h2>
+                <p class="section-subtitle">Start Your Design Journey Today</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Ready to transform your space? We'd love to hear about your vision and discuss how we can bring it to life.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Visit Our Studio</h4>
+                                <p>P118/1 Kailash Ghosh Road<br>Kolkata 700008</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>7003109728</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>antarshobha@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Select Service Type</option>
+                                <option value="residential">Residential Design</option>
+                                <option value="commercial">Commercial Design</option>
+                                <option value="custom">Custom/Bespoke</option>
+                                <option value="consultation">Design Consultation</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Tell us about your project vision..." rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo/logo.svg" alt="Antarshobha Interior Design Studio" class="footer-logo-img">
+                        <h3>Antarshobha</h3>
+                    </div>
+                    <p>Where Inner Beauty meets exceptional design. Transforming spaces, enriching lives.</p>
+                    <div class="newsletter">
+                        <h4>Stay Inspired</h4>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Residential Design</a></li>
+                        <li><a href="#services">Commercial Design</a></li>
+                        <li><a href="#services">Bespoke Solutions</a></li>
+                        <li><a href="#services">Design Consultation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#blog">Design Insights</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> P118/1 Kailash Ghosh Road, Kolkata 700008</p>
+                        <p><i class="fas fa-envelope"></i> antarshobha@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> 7003109728</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Antarshobha Interior Decoration Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/three-elements.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Notification Styles -->
+    <style>
+    .notification {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 10000;
+        padding: 15px 20px;
+        border-radius: 8px;
+        color: white;
+        font-weight: 500;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        max-width: 400px;
+    }
+
+    .notification-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .notification-message {
+        flex: 1;
+    }
+
+    .notification-close {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 0;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.8;
+        transition: opacity 0.2s ease;
+    }
+
+    .notification-close:hover {
+        opacity: 1;
+    }
+
+    .notification-success {
+        background-color: #28a745;
+    }
+
+    .notification-error {
+        background-color: #dc3545;
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 768px) {
+        .notification {
+            right: 10px;
+            left: 10px;
+            max-width: none;
+        }
+    }
+    </style>
+</body>
+</html>
+

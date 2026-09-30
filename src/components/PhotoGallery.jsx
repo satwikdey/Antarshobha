@@ -101,11 +101,21 @@ export default function PhotoGallery({ onSelectPhoto }) {
                 style={{
                   position: 'relative',
                   height: '280px',
-                  backgroundImage: `url('${item.image}')`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
+                  overflow: 'hidden',
                 }}
               >
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  loading="lazy"
+                  decoding="async"
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    transition: 'transform 0.4s ease',
+                  }}
+                />
                 {/* Subtle gradient scrim */}
                 <div
                   style={{

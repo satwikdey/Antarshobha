@@ -130,6 +130,7 @@ export default function VideoSection() {
                 ref={videoRef}
                 src={currentVideo.videoUrl}
                 poster={currentVideo.thumbnail}
+                preload="none"
                 muted
                 loop
                 playsInline

@@ -44,13 +44,14 @@ export default function Navbar({ activeTab, setActiveTab }) {
           transition: 'all 0.3s ease',
         }}
       >
-        <div style={{ width: '100%', maxWidth: '1620px', margin: '0 auto', padding: '0 1.5rem' }}>
+        <div style={{ width: '100%', maxWidth: '1620px', margin: '0 auto', padding: '0 0.85rem' }}>
           <nav
+            className="navbar-capsule"
             style={{
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'space-between',
-              padding: '0.65rem 1.75rem',
+              padding: '0.6rem 1.6rem',
               borderRadius: '9999px',
               background: isScrolled
                 ? 'rgba(10, 20, 16, 0.95)'
@@ -70,7 +71,7 @@ export default function Navbar({ activeTab, setActiveTab }) {
               style={{
                 display: 'flex',
                 alignItems: 'center',
-                gap: '0.85rem',
+                gap: '0.75rem',
                 cursor: 'pointer',
                 userSelect: 'none',
                 flexShrink: 0,
@@ -78,8 +79,8 @@ export default function Navbar({ activeTab, setActiveTab }) {
             >
               <div
                 style={{
-                  width: '38px',
-                  height: '38px',
+                  width: '36px',
+                  height: '36px',
                   borderRadius: '10px',
                   overflow: 'hidden',
                   background: '#ffffff',
@@ -106,7 +107,7 @@ export default function Navbar({ activeTab, setActiveTab }) {
                 <span
                   style={{
                     fontFamily: 'var(--font-script)',
-                    fontSize: '1.55rem',
+                    fontSize: '1.45rem',
                     fontWeight: '400',
                     color: 'var(--gold-primary)',
                     lineHeight: 1,
@@ -117,7 +118,7 @@ export default function Navbar({ activeTab, setActiveTab }) {
                 <span
                   style={{
                     fontFamily: 'var(--font-sans)',
-                    fontSize: '0.58rem',
+                    fontSize: '0.55rem',
                     fontWeight: '700',
                     letterSpacing: '0.34em',
                     color: 'var(--gold-light)',
@@ -175,11 +176,11 @@ export default function Navbar({ activeTab, setActiveTab }) {
               })}
             </div>
 
-            {/* Right Action: Consultation CTA */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexShrink: 0 }}>
+            {/* Right Action: Consultation CTA (Desktop only) & Mobile Hamburger */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem', flexShrink: 0 }}>
               <button
                 onClick={() => handleNavClick('contact')}
-                className="btn-primary"
+                className="desktop-nav btn-primary"
                 style={{
                   padding: '0.55rem 1.45rem',
                   fontSize: '0.82rem',
@@ -195,11 +196,11 @@ export default function Navbar({ activeTab, setActiveTab }) {
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 style={{
-                  background: 'rgba(255, 255, 255, 0.06)',
-                  border: '1px solid rgba(212, 178, 103, 0.25)',
+                  background: 'rgba(255, 255, 255, 0.08)',
+                  border: '1px solid rgba(212, 178, 103, 0.35)',
                   borderRadius: '50%',
-                  width: '38px',
-                  height: '38px',
+                  width: '40px',
+                  height: '40px',
                   alignItems: 'center',
                   justifyContent: 'center',
                   color: 'var(--gold-light)',
@@ -208,7 +209,7 @@ export default function Navbar({ activeTab, setActiveTab }) {
                 className="mobile-menu-btn"
                 aria-label="Toggle navigation menu"
               >
-                {mobileMenuOpen ? <X size={18} /> : <Menu size={18} />}
+                {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
               </button>
             </div>
           </nav>
@@ -221,21 +222,43 @@ export default function Navbar({ activeTab, setActiveTab }) {
           style={{
             position: 'fixed',
             inset: 0,
-            zIndex: 99,
+            zIndex: 999,
             background: 'rgba(10, 20, 16, 0.98)',
             backdropFilter: 'blur(25px)',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
             alignItems: 'center',
-            padding: '2rem',
+            padding: '2rem 1.5rem',
           }}
         >
+          {/* Close button in top-right */}
+          <button
+            onClick={() => setMobileMenuOpen(false)}
+            style={{
+              position: 'absolute',
+              top: '1.5rem',
+              right: '1.5rem',
+              background: 'rgba(255, 255, 255, 0.08)',
+              border: '1px solid rgba(212, 178, 103, 0.3)',
+              borderRadius: '50%',
+              width: '42px',
+              height: '42px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              color: 'var(--gold-light)',
+              cursor: 'pointer',
+            }}
+            aria-label="Close menu"
+          >
+            <X size={20} />
+          </button>
           <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
             <span
               style={{
                 fontFamily: 'var(--font-script)',
-                fontSize: '2.5rem',
+                fontSize: '2.3rem',
                 color: 'var(--gold-primary)',
                 display: 'block',
               }}

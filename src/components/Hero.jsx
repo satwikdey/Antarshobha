@@ -78,8 +78,8 @@ export default function Hero({ onPhotosClick, onVideosClick, onContactClick }) {
           <h1
             style={{
               fontFamily: 'var(--font-serif)',
-              fontSize: 'clamp(2.8rem, 6vw, 5rem)',
-              lineHeight: 1.08,
+              fontSize: 'clamp(2.1rem, 5.8vw, 4.8rem)',
+              lineHeight: 1.1,
               fontWeight: 400,
               color: '#ffffff',
               marginBottom: '1.25rem',
@@ -96,7 +96,7 @@ export default function Hero({ onPhotosClick, onVideosClick, onContactClick }) {
           {/* Concise Subtitle */}
           <p
             style={{
-              fontSize: 'clamp(1.05rem, 1.7vw, 1.25rem)',
+              fontSize: 'clamp(0.98rem, 1.6vw, 1.25rem)',
               lineHeight: 1.6,
               color: '#f0f5f2',
               maxWidth: '640px',
@@ -115,7 +115,7 @@ export default function Hero({ onPhotosClick, onVideosClick, onContactClick }) {
               flexWrap: 'wrap',
               alignItems: 'center',
               gap: '0.85rem',
-              marginBottom: '3rem',
+              marginBottom: '2.5rem',
             }}
           >
             <button
@@ -160,7 +160,7 @@ export default function Hero({ onPhotosClick, onVideosClick, onContactClick }) {
 
           {/* Compact 3-Stat Strip */}
           <div
-            className="glass-panel"
+            className="glass-panel hero-stats-grid"
             style={{
               display: 'grid',
               gridTemplateColumns: 'repeat(3, 1fr)',

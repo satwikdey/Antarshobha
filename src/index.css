@@ -380,6 +380,46 @@ h1, h2, h3, h4, .font-serif {
   display: none !important;
 }
 
+/* Prevent any accidental horizontal scroll or wide overflow */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden !important;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Visiting Card Responsive Inner Layout */
+.visiting-card-inner {
+  display: grid;
+  grid-template-columns: auto 1px 1fr;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.visiting-card-divider {
+  width: 1px;
+  height: 95px;
+  background: linear-gradient(180deg, transparent, var(--gold-primary), transparent);
+}
+
+.visiting-card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  word-break: break-word;
+}
+
+/* Responsive Overrides for Tablets and Phones */
 @media (max-width: 900px) {
   .desktop-nav {
     display: none !important;
@@ -387,4 +427,53 @@ h1, h2, h3, h4, .font-serif {
   .mobile-menu-btn {
     display: flex !important;
   }
+  .container {
+    padding: 0 1.15rem !important;
+  }
 }
+
+@media (max-width: 680px) {
+  .container {
+    padding: 0 0.85rem !important;
+  }
+  
+  .navbar-capsule {
+    padding: 0.5rem 0.95rem !important;
+  }
+
+  .visiting-card-replica {
+    padding: 1.35rem 1rem !important;
+  }
+
+  .visiting-card-inner {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 0.85rem !important;
+  }
+
+  .visiting-card-divider {
+    width: 65% !important;
+    height: 1px !important;
+    margin: 0.35rem auto !important;
+    background: linear-gradient(90deg, transparent, var(--gold-primary), transparent) !important;
+  }
+
+  .visiting-card-details {
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .hero-stats-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 0.4rem !important;
+    padding: 0.85rem 0.65rem !important;
+  }
+
+  .mobile-full-width {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+}
+

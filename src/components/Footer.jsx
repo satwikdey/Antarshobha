@@ -68,7 +68,7 @@ export default function Footer({ onNavClick }) {
                 <span
                   style={{
                     fontFamily: 'var(--font-script)',
-                    fontSize: '1.75rem',
+                    fontSize: '1.6rem',
                     color: 'var(--gold-primary)',
                     display: 'block',
                     lineHeight: 1,

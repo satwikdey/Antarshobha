@@ -45,7 +45,7 @@ export default function AboutStudio({ onContactClick }) {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))',
             gap: '2.5rem',
             alignItems: 'start',
           }}
@@ -58,26 +58,18 @@ export default function AboutStudio({ onContactClick }) {
                 className="visiting-card-replica"
                 style={{
                   borderRadius: '16px',
-                  padding: '1.75rem 2rem',
                   border: '1px solid rgba(212, 178, 103, 0.35)',
                 }}
               >
-                <div
-                  style={{
-                    display: 'grid',
-                    gridTemplateColumns: 'auto 1px 1fr',
-                    gap: '1.25rem',
-                    alignItems: 'center',
-                  }}
-                >
+                <div className="visiting-card-inner">
                   {/* Brand Logo & Name */}
                   <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
                     <span
                       style={{
                         fontFamily: 'var(--font-script)',
-                        fontSize: '2rem',
+                        fontSize: '2.05rem',
                         color: 'var(--gold-primary)',
-                        lineHeight: 1,
+                        lineHeight: 1.1,
                       }}
                     >
                       Antar Shobha
@@ -97,17 +89,11 @@ export default function AboutStudio({ onContactClick }) {
                     </span>
                   </div>
 
-                  {/* Vertical Divider */}
-                  <div
-                    style={{
-                      width: '1px',
-                      height: '95px',
-                      background: 'linear-gradient(180deg, transparent, var(--gold-primary), transparent)',
-                    }}
-                  />
+                  {/* Vertical / Horizontal Divider */}
+                  <div className="visiting-card-divider" />
 
                   {/* Principal Details */}
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.15rem' }}>
+                  <div className="visiting-card-details">
                     <span
                       style={{
                         fontFamily: 'var(--font-sans)',
@@ -171,27 +157,19 @@ export default function AboutStudio({ onContactClick }) {
                 className="visiting-card-replica"
                 style={{
                   borderRadius: '16px',
-                  padding: '1.75rem 2rem',
                   border: '1px solid rgba(212, 178, 103, 0.35)',
                   background: 'linear-gradient(135deg, rgba(17, 38, 32, 0.95) 0%, rgba(10, 22, 18, 0.98) 100%)',
                 }}
               >
-                <div
-                  style={{
-                    display: 'grid',
-                    gridTemplateColumns: 'auto 1px 1fr',
-                    gap: '1.25rem',
-                    alignItems: 'center',
-                  }}
-                >
+                <div className="visiting-card-inner">
                   {/* Brand Logo & Name */}
                   <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
                     <span
                       style={{
                         fontFamily: 'var(--font-script)',
-                        fontSize: '2rem',
+                        fontSize: '2.05rem',
                         color: 'var(--gold-primary)',
-                        lineHeight: 1,
+                        lineHeight: 1.1,
                       }}
                     >
                       Antar Shobha
@@ -211,17 +189,11 @@ export default function AboutStudio({ onContactClick }) {
                     </span>
                   </div>
 
-                  {/* Vertical Divider */}
-                  <div
-                    style={{
-                      width: '1px',
-                      height: '95px',
-                      background: 'linear-gradient(180deg, transparent, var(--gold-primary), transparent)',
-                    }}
-                  />
+                  {/* Vertical / Horizontal Divider */}
+                  <div className="visiting-card-divider" />
 
                   {/* Adviser Details */}
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.15rem' }}>
+                  <div className="visiting-card-details">
                     <span
                       style={{
                         fontFamily: 'var(--font-sans)',

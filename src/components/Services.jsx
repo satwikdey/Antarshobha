@@ -59,7 +59,7 @@ export default function Services({ onContactClick }) {
               maxWidth: '480px',
             }}
           >
-            End-to-end architectural interior services curated by Kaushik Banerjee, from spatial AutoCAD drafting to on-site handover.
+            End-to-end architectural interior services curated by Mr. Kaushik Banerjee, from spatial AutoCAD drafting to on-site handover.
           </p>
         </div>
 

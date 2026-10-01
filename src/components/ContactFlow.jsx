@@ -56,7 +56,7 @@ export default function ContactFlow() {
               marginTop: '0.5rem',
             }}
           >
-            Connect directly with Kaushik Banerjee to discuss your residence or schedule an atelier visit.
+            Connect directly with Mr. Kaushik Banerjee to discuss your residence or schedule an atelier visit.
           </p>
         </div>
 
@@ -104,7 +104,7 @@ export default function ContactFlow() {
                   marginBottom: '0.2rem',
                 }}
               >
-                Kaushik Banerjee
+                Mr. Kaushik Banerjee
               </h3>
               <span style={{ fontSize: '0.84rem', color: 'var(--gold-light)' }}>
                 Antar Shobha Interior
@@ -208,7 +208,7 @@ export default function ContactFlow() {
                   Inquiry Received
                 </h3>
                 <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: 1.5, marginBottom: '1.5rem' }}>
-                  Kaushik Banerjee will personally connect with you within 24 hours.
+                  Mr. Kaushik Banerjee will personally connect with you within 24 hours.
                 </p>
                 <button
                   onClick={() => setSubmitted(false)}
@@ -253,7 +253,7 @@ export default function ContactFlow() {
                   <input
                     type="text"
                     required
-                    placeholder="e.g. Kaushik Banerjee"
+                    placeholder="e.g. Mr. Kaushik Banerjee"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     style={{
@@ -382,7 +382,7 @@ export default function ContactFlow() {
                   }}
                 >
                   <Send size={14} />
-                  <span>{loading ? 'Submitting...' : 'Send Inquiry to Kaushik Banerjee'}</span>
+                  <span>{loading ? 'Submitting...' : 'Send Inquiry to Mr. Kaushik Banerjee'}</span>
                 </button>
               </form>
             )}

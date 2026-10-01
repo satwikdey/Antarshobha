@@ -92,7 +92,7 @@ export default function Footer({ onNavClick }) {
             </div>
 
             <p style={{ color: 'var(--text-secondary)', fontSize: '0.84rem', lineHeight: 1.5 }}>
-              Principal <strong>Kaushik Banerjee</strong>. Shaping quiet luxury, bespoke carpentry, and turnkey residences in Kolkata.
+              Principal <strong>Mr. Kaushik Banerjee</strong>. Shaping quiet luxury, bespoke carpentry, and turnkey residences in Kolkata.
             </p>
           </div>
 
@@ -171,7 +171,7 @@ export default function Footer({ onNavClick }) {
             fontSize: '0.78rem',
           }}
         >
-          <p>© {new Date().getFullYear()} Antar Shobha Interior • Kaushik Banerjee. Kolkata.</p>
+          <p>© {new Date().getFullYear()} Antar Shobha Interior • Mr. Kaushik Banerjee. Kolkata.</p>
           <div style={{ display: 'flex', gap: '1.25rem' }}>
             <span>Turnkey Execution</span>
             <span>Bespoke Interior Atelier</span>

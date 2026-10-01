@@ -37,7 +37,7 @@ export default function Collaborations({ onContactClick }) {
               marginTop: '0.75rem',
             }}
           >
-            Fine natural stones, master woodcarving guilds, and tailored acoustic fabrics curated by Kaushik Banerjee for lasting architectural grace.
+            Fine natural stones, master woodcarving guilds, and tailored acoustic fabrics curated by Mr. Kaushik Banerjee for lasting architectural grace.
           </p>
         </div>
 

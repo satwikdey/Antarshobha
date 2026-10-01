@@ -70,7 +70,7 @@ export default function Hero({ onPhotosClick, onVideosClick, onContactClick }) {
                 textTransform: 'uppercase',
               }}
             >
-              Antar Shobha Interior • Kaushik Banerjee
+              Antar Shobha Interior • Mr. Kaushik Banerjee
             </span>
           </div>
 
@@ -105,7 +105,7 @@ export default function Hero({ onPhotosClick, onVideosClick, onContactClick }) {
               textShadow: '0 2px 10px rgba(0, 0, 0, 0.85)',
             }}
           >
-            Bespoke residential architecture, handcrafted teak joinery, and turnkey site supervision across Kolkata by Principal Kaushik Banerjee.
+            Bespoke residential architecture, handcrafted teak joinery, and turnkey site supervision across Kolkata by Principal Mr. Kaushik Banerjee.
           </p>
 
           {/* Call to Actions */}

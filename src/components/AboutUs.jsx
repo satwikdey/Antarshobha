@@ -38,7 +38,7 @@ export default function AboutUs({ onContactClick }) {
               fontWeight: 300,
             }}
           >
-            Rooted in Kolkata and guided by Principal Designer <strong style={{ color: 'var(--gold-light)' }}>Kaushik Banerjee</strong>, 
+            Rooted in Kolkata and guided by Principal Designer <strong style={{ color: 'var(--gold-light)' }}>Mr. Kaushik Banerjee</strong>, 
             Antar Shobha (meaning <em>"Inner Radiance"</em>) approaches interior design as an art of restraint. 
             We build enduring sanctuaries where bespoke teak joinery, honest natural stone, and gentle ambient lighting 
             create a calming sense of homecoming.
@@ -167,7 +167,7 @@ export default function AboutUs({ onContactClick }) {
                         color: 'var(--gold-light)',
                       }}
                     >
-                      Kaushik Banerjee
+                      Mr. Kaushik Banerjee
                     </span>
                     <span style={{ fontSize: '0.74rem', color: 'var(--gold-primary)' }}>
                       M : {studioData.contact.displayPhone}
@@ -201,7 +201,7 @@ export default function AboutUs({ onContactClick }) {
                   flex: 1,
                 }}
               >
-                Every project is personally curated by Kaushik Banerjee, from spatial zoning and AutoCAD joinery drawings to turnkey site execution and material handoff.
+                Every project is personally curated by Mr. Kaushik Banerjee, from spatial zoning and AutoCAD joinery drawings to turnkey site execution and material handoff.
               </p>
               <div
                 style={{
@@ -443,7 +443,7 @@ export default function AboutUs({ onContactClick }) {
               className="btn-secondary"
               style={{ width: '100%', marginTop: '1.5rem', padding: '0.75rem' }}
             >
-              <span>Connect with Kaushik Banerjee</span>
+              <span>Connect with Mr. Kaushik Banerjee</span>
               <ArrowUpRight size={16} />
             </button>
           </div>
@@ -484,7 +484,7 @@ export default function AboutUs({ onContactClick }) {
               textTransform: 'uppercase',
             }}
           >
-            <span>Kaushik Banerjee • Antar Shobha Interior Philosophy</span>
+            <span>Mr. Kaushik Banerjee • Antar Shobha Interior Philosophy</span>
           </div>
         </div>
       </div>

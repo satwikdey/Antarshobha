@@ -91,7 +91,7 @@ export default function App() {
         href={studioData.contact.whatsapp}
         target="_blank"
         rel="noreferrer"
-        aria-label="Direct WhatsApp Chat with Kaushik Banerjee"
+        aria-label="Direct WhatsApp Chat with Mr. Kaushik Banerjee"
         style={{
           position: 'fixed',
           bottom: '2rem',

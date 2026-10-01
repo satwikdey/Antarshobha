@@ -36,7 +36,7 @@ export default function AboutStudio({ onContactClick }) {
             }}
           >
             Derived from the Sanskrit <em>"অন্তর শোভা"</em> (Inner Radiance), Antar Shobha creates 
-            deeply personal sanctuaries guided by Principal Designer <strong>Kaushik Banerjee</strong> and 
+            deeply personal sanctuaries guided by Principal Designer <strong>Mr. Kaushik Banerjee</strong> and 
             Strategic Adviser <strong>Mr. Alapan Chakravorty</strong>.
           </p>
         </div>
@@ -52,7 +52,7 @@ export default function AboutStudio({ onContactClick }) {
         >
           {/* Left: Leadership & Visiting Cards (Principal & Adviser) */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.75rem' }}>
-            {/* Card 1: Kaushik Banerjee (Principal) */}
+            {/* Card 1: Mr. Kaushik Banerjee (Principal) */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               <div
                 className="visiting-card-replica"
@@ -102,7 +102,7 @@ export default function AboutStudio({ onContactClick }) {
                         color: 'var(--gold-light)',
                       }}
                     >
-                      Kaushik Banerjee
+                      Mr. Kaushik Banerjee
                     </span>
                     <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                       Principal Interior Designer
@@ -127,7 +127,7 @@ export default function AboutStudio({ onContactClick }) {
                 </div>
               </div>
 
-              {/* Quick Actions for Kaushik Banerjee */}
+              {/* Quick Actions for Mr. Kaushik Banerjee */}
               <div style={{ display: 'flex', gap: '0.65rem' }}>
                 <a
                   href={`tel:${studioData.founder.rawPhone}`}
@@ -135,7 +135,7 @@ export default function AboutStudio({ onContactClick }) {
                   style={{ flex: 1, padding: '0.65rem', fontSize: '0.82rem' }}
                 >
                   <Phone size={13} color="var(--gold-primary)" />
-                  <span>Call Kaushik</span>
+                  <span>Call Mr. Kaushik</span>
                 </a>
 
                 <a
@@ -314,7 +314,7 @@ export default function AboutStudio({ onContactClick }) {
                   03. Turnkey Execution & Site Oversight
                 </h4>
                 <p style={{ color: 'var(--text-secondary)', fontSize: '0.88rem', lineHeight: 1.55 }}>
-                  End-to-end site management by Principal Kaushik Banerjee, fixed budgets, material procurement, and white-glove handover.
+                  End-to-end site management by Principal Mr. Kaushik Banerjee, fixed budgets, material procurement, and white-glove handover.
                 </p>
               </div>
             </div>

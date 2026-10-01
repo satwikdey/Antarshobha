@@ -193,5 +193,13 @@ export const videoGallery = [
     videoUrl: '/images/videos/walkthrough-6.mp4',
     thumbnail: '/images/video-thumbs/walkthrough-6-thumb.jpg',
     duration: '0:40'
+  },
+  {
+    id: 'video-7',
+    title: 'Master Bedroom Suite & Smoked Glass Wardrobes',
+    category: 'Master Suite',
+    videoUrl: '/images/videos/walkthrough-7.mp4',
+    thumbnail: '/images/video-thumbs/walkthrough-7-thumb.jpg',
+    duration: '0:10'
   }
 ];
